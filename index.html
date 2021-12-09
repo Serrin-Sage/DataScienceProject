@@ -13,7 +13,7 @@
         <h1 class="title">Rescuing Rescues</h1>
         <div class="links">
             <a href="#" class="link-style">
-                About My Project
+                About
             </a>
             <a href="#" class="link-style">
                 Data
@@ -35,13 +35,53 @@
 
        <div class="About"> 
            <div class="about-text">
-                <h2> Serrin Doscher: This is my project</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam blanditiis deserunt dolores itaque hic pariatur mollitia ipsam magnam voluptatibus ea! Aliquam ad praesentium porro fugiat officiis amet nihil velit odio!</p>
+                <h2> Serrin Doscher: My project</h2>
+                <p>The focus of my project was to gather and analyze data from animal shelters within New York. All data was gathered from<a href="https://www.shelteranimalscount.org/" target="_blank"> shelteranimalscount.org.</a> The categories I chose were: Gross Intake - How many animals were taken into animal shelters. Live Outcome - How many animals were released from the shelters. Adoptions-  The number of adoptions from the shelters. Stray- How many animals were reported as stray (result of TNR). Euthanasia- How many animals were euthanized in shelters. This data was used to analyze the correlation between adoptions, stray populations, and euthanasia counts. My success metric was measured by if adoptions went up, stray population went down and euthanasia counts went down.</p>
            </div>
-           <div class="about-img">
-               <img src="./catpic2.jpg" alt="Dog Pic" class="about-shelter-img">
+           <div class="image-column">
+                <div class="about-img">
+                    <img src="./catpic2.jpg" alt="Cat Pic" class="about-shelter-img">
+                </div>
+                <div class="about-img">
+                    <img src="./groupdogs.png" alt="Cat Pic" class="about-shelter-img">
+                </div>
            </div>
         </div>
+
+        <div class="Important"> 
+            <div class="imp-text">
+                 <h2> Importance </h2>
+                 <p>Every year animal shelters get overwhelmed with the number of stray or relinquished animals. The goal with strays is to adopt them out or preform TNR; TNR stands for Trap, Neuter, Return. Stray animals are taken in by shelter employees, volunteers, or the general public, the animal is neutered or spayed, then they are returned to the area they were found. This prevents overpopulation and if the animal is feral, it keeps them content living their life away from humans. If overpopulation occurs some animals unfortunately face euthanasia due to limited shelter budgets, limited space at the shelter, or inadeqaute medical equipment to TNR. </p>
+            </div>
+         </div>
+
+         <div class="Process"> 
+            <div class="pro-text">
+                 <h2> Process </h2>
+                 <p>I started my research by looking up "Shelter Animal Data".  The first link was shelteranimalscount.org which was exactly what I needed. The data can be filtered and organized by year, state, community, organization name, organization type, and species. I chose to look at year, NY state and both cats and dogs. The data was not avaible as a CSV download so I compiled the data I needed into a Google Spreadsheet mnaually. After this I found the yearly average of each category and created another CSV which was used in my data analysis. I used Python 3 to make graphs using matplotlib that visualized my data. 
+                "LINKS TO CSV'S"
+                 </p>
+            </div>
+
+            <div class="Data"> 
+                <div class="data-text">
+                     <h2> Data </h2>
+                     <p> The first visualization I made was a line graph to show the gross intake and live outcome of animals in NY through 2016-2020. There is a significant outlier in my data though which makes my success metric hard to quantify. The outlier being the Coronavirus Pandemic, as you will see in most of my visualizations the pandemic severly impacted the numbers gathered for 2020. Although with that outlier the data does skew in a positive direction for my focus.
+                     </p>
+                     <div class="graph-container">
+                        <div class="line-data">
+                            <img src="./LineGraph.png" alt="Line Graph" class="graph-img">
+                            <p class="graph-text">This graph shows that the gross intake and live outcome of animals in the shelters were increasing until the outlier. Other outcome includes anything from euthanasia to being transfered to antother shelter. This idicates that shelters were increasing in their success rate to take in and release live animals, while the other outcomes like euthanasia trended downwards.</p>
+                        </div>
+                        <div class="area-data">
+                            <img src="./areagraph.png" alt="Area Graph" class="graph-img">
+                            <p class="graph-text">This graph shows that the gross intake and live outcome of animals in the shelters were increasing until the outlier. Other outcome includes anything from euthanasia to being transfered to antother shelter. This idicates that shelters were increasing in their success rate to take in and release live animals, while the other outcomes like euthanasia trended downwards.</p>
+                        </div>
+                        
+                     </div>
+                     
+                </div>
+         </div>
 
     </div>
 
