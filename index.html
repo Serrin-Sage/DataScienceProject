@@ -12,16 +12,16 @@
     <div class="header-container">
         <h1 class="title">Rescuing Rescues</h1>
         <div class="links">
-            <a href="#" class="link-style">
+            <a href="#About" class="link-style">
                 About
             </a>
-            <a href="#" class="link-style">
+            <a href="#Data" class="link-style">
                 Data
             </a>
-            <a href="#" class="link-style">
-                Sources
+            <a href="#Organizations" class="link-style">
+                Organizations
             </a>
-            <a href="#" class="link-style">
+            <a href="#Links" class="link-style">
                 Links
             </a>
         </div>
@@ -33,7 +33,7 @@
         <img src="./DogPic.jpg" alt="Dogs Image" class="shelter-img">
 
 
-       <div class="About"> 
+       <div id="About"> 
            <div class="about-text">
                 <h2> Serrin Doscher: My project</h2>
                 <p>The focus of my project was to gather and analyze data from animal shelters within New York. All data was gathered from<a href="https://www.shelteranimalscount.org/" target="_blank"> shelteranimalscount.org.</a> The categories I chose were: Gross Intake - How many animals were taken into animal shelters. Live Outcome - How many animals were released from the shelters. Adoptions-  The number of adoptions from the shelters. Stray- How many animals were reported as stray (result of TNR). Euthanasia- How many animals were euthanized in shelters. This data was used to analyze the correlation between adoptions, stray populations, and euthanasia counts. My success metric was measured by if adoptions went up, stray population went down and euthanasia counts went down.</p>
@@ -58,44 +58,136 @@
          <div class="Process"> 
             <div class="pro-text">
                  <h2> Process </h2>
-                 <p>I started my research by looking up "Shelter Animal Data".  The first link was shelteranimalscount.org which was exactly what I needed. The data can be filtered and organized by year, state, community, organization name, organization type, and species. I chose to look at year, NY state and both cats and dogs. The data was not avaible as a CSV download so I compiled the data I needed into a Google Spreadsheet mnaually. After this I found the yearly average of each category and created another CSV which was used in my data analysis. I used Python 3 to make graphs using matplotlib that visualized my data. 
-                "LINKS TO CSV'S"
+                 <p>I started my research by looking up "Shelter Animal Data".  The first link was shelteranimalscount.org which was exactly what I needed. The data can be filtered and organized by year, state, community, organization name, organization type, and species. I chose to look at year, NY state and both cats and dogs. The data was not avaible as a CSV download so I compiled the data I needed into a Google Spreadsheet mnaually. After this I found the yearly average of each category and created another CSV which was used in my data analysis. I used Python 3 to make graphs using matplotlib that visualized my data. Within my code I generated a Data Frame from the imported csv and read through the data I needed. All graph creation are functions I wrote, each has the Data Frame as the main arguement. The user is prompted to enter which graph they want visualized, upon entering a valid option the graph is genereated. For the Pie and Bar graph the user can specify data type and year accordingly.
+                <div class="dropdown">
+                    <button class="dropbtn">CSV Files</button>
+                    <div class="dropdown-content">
+                        <a href="">Animal Shelter Data</a>
+                        <a href="">Animal Shelter Data Averages</a>
+                    </div>
+                </div>>
                  </p>
             </div>
-
-            <div class="Data"> 
-                <div class="data-text">
-                     <h2> Data </h2>
-                     <p> The first visualization I made was a line graph to show the gross intake and live outcome of animals in NY through 2016-2020. There is a significant outlier in my data though which makes my success metric hard to quantify. The outlier being the Coronavirus Pandemic, as you will see in most of my visualizations the pandemic severly impacted the numbers gathered for 2020. Although with that outlier the data does skew in a positive direction for my focus.
-                     </p>
-                     <div class="graph-container">
-                        <div class="line-data">
-                            <img src="./linegraph.png" alt="Line Graph" class="graph-img">
-                            <p class="graph-text">This graph shows that the gross intake and live outcome of animals in the shelters were increasing until the outlier. Other outcome includes anything from euthanasia to being transfered to antother shelter. This idicates that shelters were increasing in their success rate to take in and release live animals, while the other outcomes like euthanasia trended downwards.</p>
-                        </div>
-                        <div class="area-data">
-                            <img src="./areagraph.png" alt="Area Graph" class="graph-img">
-                            <p class="graph-text">The area graph was used to see the correlation between adoptions, strays, and euthanasia. We can see that euthanasia is trending downwards before the outlier. Adoptions are increasing, while stray population stays reletively the same. Since stray population is not increasing significantly we can assume that TNR is effective and those animals released are not reproducing. </p>
-                        </div>
-                     </div>
-                     <div class="graph-container">
-                        <div class="pie-data">
-                            <img src="./piechart.png" alt="Line Graph" class="graph-img">
-                            <p class="graph-text">This graph shows that the gross intake and live outcome of animals in the shelters were increasing until the outlier. Other outcome includes anything from euthanasia to being transfered to antother shelter. This idicates that shelters were increasing in their success rate to take in and release live animals, while the other outcomes like euthanasia trended downwards.</p>
-                        </div>
-                        <div class="bar-data">
-                            <img src="./bargraph.png" alt="Area Graph" class="graph-img">
-                            <p class="graph-text">The area graph was used to see the correlation between adoptions, strays, and euthanasia. We can see that euthanasia is trending downwards before the outlier. Adoptions are increasing, while stray population stays reletively the same. Since stray population is not increasing significantly we can assume that TNR is effective and those animals released are not reproducing. </p>
-                        </div>
-                     </div>
-                </div>
          </div>
+         <div id="Data"> 
+            <div class="data-text">
+                 <h2> Data </h2>
+                 <p> The visualizations I made were all contained within 2016-2020. The deal with the averages of each category I chose to study and analyze. There is a significant outlier in my data though which makes my success metric hard to quantify. The outlier being the Coronavirus Pandemic, as you will see in most of my visualizations the pandemic severly impacted the numbers gathered for 2020. Although with that outlier the data does skew in a positive direction for my focus.
+                 </p>
+                 <div class="graph-container">
+                    <div class="line-data">
+                        <img src="./linegraph.png" alt="Line Graph" class="graph-img">
+                        <p class="graph-text">This graph shows that the gross intake and live outcome of animals in the shelters were increasing until the outlier. Other outcome includes anything from euthanasia to being transfered to antother shelter. This idicates that shelters were increasing in their success rate to take in and release live animals, while the other outcomes like euthanasia trended downwards.</p>
+                    </div>
+                    <div class="area-data">
+                        <img src="./areagraph.png" alt="Area Graph" class="graph-img">
+                        <p class="graph-text">The area graph was used to see the correlation between adoptions, strays, and euthanasia. We can see that euthanasia is trending downwards before the outlier. Adoptions are increasing, while stray population stays reletively the same. Since stray population is not increasing significantly we can assume that TNR is effective and those animals released are not reproducing. </p>
+                    </div>
+                 </div>
+                 <div class="graph-container">
+                    <div class="pie-data">
+                        <img src="./piechart.png" alt="Line Graph" class="graph-img">
+                        <p class="graph-text">
+                            The pie chart was generated for gross intake of dogs and cats in 2016. In my code you can pick and choose which data set to view with which year. The pie chart was mainly to show the significant differences between cat and dog distributions.
+                        </p>
+                    </div>
+                    <div class="bar-data">
+                        <img src="./bargraph.png" alt="Area Graph" class="graph-img">
+                        <p class="graph-text">
+                            The bar graph shows the yearly distribution for cats and dogs, along with the total average of that year. The user can pick and choose whioch data set to view. Here we can see adoptions increasing for both dogs and cats until the outlier. For NY it is not too surprising seeing more cats than dogs, since they are easier to house in small apartments and most shelters encourage adopting two cats especially if they are young.
+                        </p>
+                    </div>
+                 </div>
+            </div> 
+    </div>
+    <div id="Organizations">
+        <h1 class="title">Organizations in NYC That Provided Data</h1>
+        <div class="links">
+            <ul>
+                <li><a href="https://www.advocatrescue.org/" class="org-link" target="blank">
+                    AdvoCat Rescue Inc
+                </a></li>
+                <li><a href="https://www.nycacc.org/" class="org-link" target="blank">
+                    Animal Care Centers of NYC
+                </a></li>
+                <li><a href="https://www.anjelliclecats.com/" class="org-link" target="blank">
+                    Anjellicle Cats Rescue
+                </a></li>
+                <li><a href="https://www.aspca.org/" class="org-link" target="blank">
+                    ASPCA
+                </a></li>
+                <li><a href="https://badassanimalrescue.com/" class="org-link" target="blank">
+                    Badass Brooklyn Animal Rescue
+                </a></li>
+                <li><a href="https://bestfriends.org/" class="org-link" target="blank">
+                    Best Friends Animal Society
+                </a></li>
+                <li><a href="https://www.bideawee.org/" class="org-link" target="blank">
+                    Bideawee
+                </a></li>
+                <li><a href="https://bobbiandthestrays.org/" class="org-link" target="blank">
+                    Bobbi and the Strays
+                </a></li>
+                <li><a href="https://www.bbawc.org/" class="org-link" target="blank">
+                    Brooklyn Bridge Animal Welfare Coalition
+                </a></li>
+                <li><a href="https://camphappytailsnyc.com/" class="org-link" target="blank">
+                    CAMP HAPPY TAILS INC
+                </a></li>
+                <li><a href="http://www.citycritters.org/" class="org-link" target="blank">
+                    City Critters
+                </a></li>
+                <li><a href="https://feralcatsolutions.org/" class="org-link" target="blank">
+                    Feral Colony Solutions
+                </a></li>
+                <li><a href="https://www.foranimalsinc.com/" class="org-link" target="blank">
+                    For Animals Inc
+                </a></li>
+                <li><a href="https://www.fosterdogsnyc.com/" class="org-link" target="blank">
+                    Foster Dogs Incorporated
+                </a></li>
+                <li><a href="https://givemeshelterproject.org/" class="org-link" target="blank">
+                    Give Me Shelter Project
+                </a></li>
+                <li><a href="https://www.infinitehope.org/" class="org-link" target="blank">
+                    Infinite Hope
+                </a></li>
+                <li><a href="https://kittykind.org/" class="org-link" target="blank">
+                    KittyKind
+                </a></li>
+                <li><a href="https://www.facebook.com/littlewanderersnyc" class="org-link" target="blank">
+                    Little Wanderers NYC
+                </a></li>
+                <li><a href="https://www.meowparlour.com/" class="org-link" target="blank">
+                    Meow Parlour Cats
+                </a></li>
+                <li><a href="https://www.muddypawsrescue.org/" class="org-link" target="blank">
+                    Muddy Paws Rescue
+                </a></li>
+                <li><a href="https://poshpetsrescueny.org/" class="org-link" target="blank">
+                    Posh Pets Rescue
+                </a></li>
+                <li><a href="https://www.poundhoundsresq.org/" class="org-link" target="blank">
+                    Pound Hounds Res-Q
+                </a></li>
+                <li><a href="https://puppykittynyc.org/" class="org-link" target="blank">
+                    Puppy Kitty NYC
+                </a></li>
+                <li><a href="https://www.rescuecity.nyc/" class="org-link" target="blank">
+                    Rescue City
+                </a></li>
+                <li><a href="https://www.nycsecondchancerescue.org/" class="org-link" target="blank">
+                    Second Chance Rescue
+                </a></li>
+                <li><a href="https://thesatoproject.org/" class="org-link" target="blank">
+                    The Sato Project
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="Links"> 
 
     </div>
-
-
-    
-  
 </body>
 
 
