@@ -1,5 +1,71 @@
 body{
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+    max-width: 75vw;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    font-family: 'Montserrat','Courier New', Courier, monospace;
+}
+
+h2 {
     margin: 0;
-    background: pink;
-    text-align: center;
+}
+title{
+   
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-style{
+    padding-left: 1rem;
+    text-decoration: none;
+    color: purple;
+}
+
+#line{
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+}
+
+.body-container{
+
+}
+
+.shelter-img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: 1rem;
+}
+
+.About{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5rem;
+    
+}
+
+.about-text{
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.about-img {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.about-shelter-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30%;
 }
