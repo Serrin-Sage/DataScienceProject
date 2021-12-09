@@ -94,11 +94,15 @@ title{
 
 .graph-text{
     padding: 1rem;
+    padding-bottom: 4rem;
 }
 .graph-img{
     height: 50%;
-    width: 80%;
+    width: 70%;
     object-fit: fill;
     align-items: center;
 }
 
+.graph-img:hover{
+    transform: scale(2);
+}
