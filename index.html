@@ -37,15 +37,15 @@
            <div class="about-text">
                 <h2> Serrin Doscher: My project</h2>
                 <p>The focus of my project was to gather and analyze data from animal shelters within New York. All data was gathered from<a href="https://www.shelteranimalscount.org/" target="_blank"> shelteranimalscount.org.</a> The categories I chose were: Gross Intake - How many animals were taken into animal shelters. Live Outcome - How many animals were released from the shelters. Adoptions-  The number of adoptions from the shelters. Stray- How many animals were reported as stray (result of TNR). Euthanasia- How many animals were euthanized in shelters. This data was used to analyze the correlation between adoptions, stray populations, and euthanasia counts. My success metric was measured by if adoptions went up, stray population went down and euthanasia counts went down.</p>
+                
            </div>
-           <div class="image-column">
-                <div class="about-img">
-                    <img src="./catpic2.jpg" alt="Cat Pic" class="about-shelter-img">
-                </div>
-                <div class="about-img">
-                    <img src="./groupdogs.png" alt="Cat Pic" class="about-shelter-img">
-                </div>
-           </div>
+           <div class="about-img">
+                <img src="./catpic2.jpg" alt="Cat Pic" class="about-shelter-img">
+            </div>
+           
+        </div>    
+        <div class="about-img-dogs">
+            <img src="./groupdogs.png" alt="Cat Pic" class="about-shelter-dog-img">
         </div>
 
         <div class="Important"> 
@@ -62,10 +62,10 @@
                 <div class="dropdown">
                     <button class="dropbtn">CSV Files</button>
                     <div class="dropdown-content">
-                        <a href="">Animal Shelter Data</a>
-                        <a href="">Animal Shelter Data Averages</a>
+                        <a href="https://github.com/Serrin-Sage/DataScienceProject/blob/site/shelter_data_nyc.csv" target="blank">Animal Shelter Data</a>
+                        <a href="https://github.com/Serrin-Sage/DataScienceProject/blob/site/shelter_data_avg.csv" target="blank">Animal Shelter Data Averages</a>
                     </div>
-                </div>>
+                </div>
                  </p>
             </div>
          </div>
@@ -74,34 +74,32 @@
                  <h2> Data </h2>
                  <p> The visualizations I made were all contained within 2016-2020. The deal with the averages of each category I chose to study and analyze. There is a significant outlier in my data though which makes my success metric hard to quantify. The outlier being the Coronavirus Pandemic, as you will see in most of my visualizations the pandemic severly impacted the numbers gathered for 2020. Although with that outlier the data does skew in a positive direction for my focus.
                  </p>
-                 <div class="graph-container">
-                    <div class="line-data">
-                        <img src="./linegraph.png" alt="Line Graph" class="graph-img">
-                        <p class="graph-text">This graph shows that the gross intake and live outcome of animals in the shelters were increasing until the outlier. Other outcome includes anything from euthanasia to being transfered to antother shelter. This idicates that shelters were increasing in their success rate to take in and release live animals, while the other outcomes like euthanasia trended downwards.</p>
-                    </div>
-                    <div class="area-data">
-                        <img src="./areagraph.png" alt="Area Graph" class="graph-img">
-                        <p class="graph-text">The area graph was used to see the correlation between adoptions, strays, and euthanasia. We can see that euthanasia is trending downwards before the outlier. Adoptions are increasing, while stray population stays reletively the same. Since stray population is not increasing significantly we can assume that TNR is effective and those animals released are not reproducing. </p>
-                    </div>
-                 </div>
-                 <div class="graph-container">
-                    <div class="pie-data">
-                        <img src="./piechart.png" alt="Line Graph" class="graph-img">
-                        <p class="graph-text">
-                            The pie chart was generated for gross intake of dogs and cats in 2016. In my code you can pick and choose which data set to view with which year. The pie chart was mainly to show the significant differences between cat and dog distributions.
-                        </p>
-                    </div>
-                    <div class="bar-data">
-                        <img src="./bargraph.png" alt="Area Graph" class="graph-img">
-                        <p class="graph-text">
-                            The bar graph shows the yearly distribution for cats and dogs, along with the total average of that year. The user can pick and choose whioch data set to view. Here we can see adoptions increasing for both dogs and cats until the outlier. For NY it is not too surprising seeing more cats than dogs, since they are easier to house in small apartments and most shelters encourage adopting two cats especially if they are young.
-                        </p>
-                    </div>
-                 </div>
             </div> 
+            <div class="graph-container">
+                <div class="graph-data">
+                    <img src="./linegraph.png" alt="Line Graph" class="graph-img">
+                    <p class="graph-text">This graph shows that the gross intake and live outcome of animals in the shelters were increasing until the outlier. Other outcome includes anything from euthanasia to being transfered to antother shelter. This idicates that shelters were increasing in their success rate to take in and release live animals, while the other outcomes like euthanasia trended downwards.</p>
+                </div>
+                <div class="graph-data">
+                    <p class="graph-text">The area graph was used to see the correlation between adoptions, strays, and euthanasia. We can see that euthanasia is trending downwards before the outlier. Adoptions are increasing, while stray population stays reletively the same. Since stray population is not increasing significantly we can assume that TNR is effective and those animals released are not reproducing. </p>
+                    <img src="./areagraph.png" alt="Area Graph" class="graph-img">
+                </div>
+             </div>
+            <div class="graph-data">
+                <img src="./piechart.png" alt="Line Graph" class="graph-img">
+                <p class="graph-text">
+                    The pie chart was generated for gross intake of dogs and cats in 2016. In my code you can pick and choose which data set to view with which year. The pie chart was mainly to show the significant differences between cat and dog distributions.
+                </p>
+            </div>
+            <div class="graph-data">  
+                <p class="graph-text">
+                    The bar graph shows the yearly distribution for cats and dogs, along with the total average of that year. The user can pick and choose whioch data set to view. Here we can see adoptions increasing for both dogs and cats until the outlier. For NY it is not too surprising seeing more cats than dogs, since they are easier to house in small apartments and most shelters encourage adopting two cats especially if they are young.
+                </p>
+                <img src="./bargraph.png" alt="Area Graph" class="graph-img">
+            </div>
     </div>
     <div id="Organizations">
-        <h1 class="title">Organizations in NYC That Provided Data</h1>
+        <h2 class="title">Organizations in NYC That Provided Data</h2>
         <div class="links">
             <ul>
                 <li><a href="https://www.advocatrescue.org/" class="org-link" target="blank">
@@ -186,6 +184,26 @@
         </div>
     </div>
     <div id="Links"> 
+        <h2 class="title">Links and References</h2>
+        <div class="link-container">
+
+            <div class="link-col1">
+                <p><a href="https://www.shelteranimalscount.org/data-dashboards" class="links">shelteranimalscount.org</a>
+                <p><a href="https://github.com/Serrin-Sage/DataScienceProject/tree/site" class="links">My GitHub</a></p>
+                <p><a href="https://www.linkedin.com/in/serrin-doscher-2a0544224/" class="links">My LinkedIn</a></p>
+            </div>
+            <div class="link-col2">
+                <p><a href="https://www.w3schools.com/css/css_dropdowns.asp" class="links">w3schools</a>
+                <p><a href="" class="links"></a></p>
+                <p><a href="" class="links"></a></p>
+            </div>
+            <div class="link-col3">
+                <p><a href="" class="links"></a>
+                <p><a href="" class="links"></a></p>
+                <p><a href="" class="links"></a></p>
+            </div>
+        </div>
+        
 
     </div>
 </body>

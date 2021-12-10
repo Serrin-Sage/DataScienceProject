@@ -12,6 +12,10 @@ body{
 h2 {
     margin: 0;
 }
+
+p{
+    line-height: 1.5rem;
+}
 title{
    
 }
@@ -42,7 +46,8 @@ title{
 }
 
 .body-container{
-
+    height: 100%;
+    width: 100%;
 }
 
 .shelter-img{
@@ -53,32 +58,53 @@ title{
 
 /* About section */
 #About{
-    display: flex;
-    align-items: flex-start;
     margin-top: 5rem;
-    
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 
 .about-text{
     flex: 1;
-    padding-right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+}
+.about-text>h2{
+    text-align: left;
+    width: 100%;
 }
 
-.image-column{
-    flex-direction: column;
-}
+
 .about-img {
-    flex: 1;
+    flex: 2;
     height: 100%;
     width: 100%;
-    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img-dogs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0 2rem 0;
+}
+
+.about-shelter-dog-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .about-shelter-img {
     height: 80%;
     width: 80%;
-    object-fit: cover;
-    border-radius: 30%;
+    object-fit: none;
 }
 
 /* Important section */
@@ -93,30 +119,37 @@ title{
 
 /* Data Section */
 #Data{
-
+    margin: 2rem 0 2rem 0;
 }
 .graph-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.line-data{
-    
+.graph-data{
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .graph-text{
-    padding: 1rem;
-    padding-bottom: 4rem
+    flex: 1;
 }
 .graph-img{
     height: 50%;
     width: 70%;
     object-fit: fill;
     align-items: center;
+    flex: 2;
+    transition: 0.5s;
 }
 
 .graph-img:hover{
-    transform: scale(2);
+    transition: 0.5s;
+    transform: scale(1.1);
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 /* Organization Section */
@@ -128,7 +161,26 @@ title{
     color: rgb(189, 0, 189);
 }
 
+/* Links Section */
+.link-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.links{
+    color: black;
+    text-decoration: none;
+}
+
+.links:hover{
+    color: rgb(189, 0, 189);
+}
+
+
+
+/* CSV Dropdown menu*/
 .dropbtn {
     background-color: #59add4;
     color: white;
