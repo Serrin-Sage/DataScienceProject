@@ -1,3 +1,9 @@
+#Name: Serrin Doscher
+#Email: serrin.doscher53@myhunter.cuny.edu
+#Resources: CSCI39542, w3schools, stackoverflow, codepen, matplotlib.org, HTML and CSS tutorials on YouTube
+#URL: https://serrin-sage.github.io/DataScienceProject/
+
+
 #importing necessary libraries
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -9,6 +15,7 @@ shelter_data_avg = pd.read_csv('shelter_data_avg.csv')
 shelter_df = pd.DataFrame(shelter_data_avg)
 
 #create area graph based on the given Dataframe
+#Data is set within function and can not be changed by user
 def createAreaGraph(df):
     shelter_df = pd.DataFrame(df)
     fig = plt.figure(figsize=(12,8))
@@ -33,6 +40,7 @@ def createAreaGraph(df):
     return fig
 
 #create a line graph based on the given Dataframe
+#Data is set within function and can not be changed by user
 def createLineGraph(df):
     shelter_df = pd.DataFrame(df)
     fig = plt.figure(figsize=(12,8))
@@ -55,6 +63,8 @@ def createLineGraph(df):
     plt.legend(loc='upper right')
     return fig
 
+#create a pie chart based on the given Dataframe and year
+#Data is influenced by users input
 def createPieChart(df, year, title, cat, dog):
     if year == '2016':
         pos = 0
@@ -81,6 +91,8 @@ def createPieChart(df, year, title, cat, dog):
     plt.title(f"Cat and Dog Distribution for {title} in " + year, fontweight='bold')
     return fig
 
+#create a bar graph based on the given Dataframe and the data type
+#Data is influenced by users input
 def createBarGraph(df, main_col, title, cat, dog):
     sheler_df = pd.DataFrame(df)
 
