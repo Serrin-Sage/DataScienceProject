@@ -1,3 +1,4 @@
+#Title: Rescuing Rescues
 #Name: Serrin Doscher
 #Email: serrin.doscher53@myhunter.cuny.edu
 #Resources: CSCI39542, w3schools, stackoverflow, codepen, matplotlib.org, HTML and CSS tutorials on YouTube
