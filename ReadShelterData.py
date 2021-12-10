@@ -1,3 +1,4 @@
+#Title: Rescuing Rescues
 #Name: Serrin Doscher
 #Email: serrin.doscher53@myhunter.cuny.edu
 #Resources: CSCI39542, w3schools, stackoverflow, codepen, matplotlib.org, HTML and CSS tutorials on YouTube
@@ -35,7 +36,7 @@ def createAreaGraph(df):
 
     plt.title('Outcome of Shelter Animals 2016-2020', fontweight='bold', fontsize=20)
     plt.xlabel('Year', fontweight='bold', fontsize=15)
-    plt.ylabel('Intake', fontweight='bold', fontsize=15)
+    plt.ylabel('Outcome', fontweight='bold', fontsize=15)
 
     return fig
 

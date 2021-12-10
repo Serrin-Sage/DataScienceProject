@@ -36,7 +36,14 @@
        <div id="About"> 
            <div class="about-text">
                 <h2> Serrin Doscher: My project</h2>
-                <p>The focus of my project was to gather and analyze data from animal shelters within New York. All data was gathered from<a href="https://www.shelteranimalscount.org/" target="_blank"> shelteranimalscount.org.</a> The categories I chose were: Gross Intake - How many animals were taken into animal shelters. Live Outcome - How many animals were released from the shelters. Adoptions-  The number of adoptions from the shelters. Stray- How many animals were reported as stray (result of TNR). Euthanasia- How many animals were euthanized in shelters. This data was used to analyze the correlation between adoptions, stray populations, and euthanasia counts. My success metric was measured by if adoptions went up, stray population went down and euthanasia counts went down.</p>
+                <p>The focus of my project was to gather and analyze data from animal shelters within New York. All data was gathered from<a href="https://www.shelteranimalscount.org/" target="_blank"> shelteranimalscount.org.</a> The categories I chose were: <ul>
+                    <li>Gross Intake - How many animals were taken into animal shelters.</li>
+                    <li>Live Outcome - How many animals were released from the shelters.
+                    </li>
+                    <li>Adoptions-  The number of adoptions from the shelters.</li>
+                    <li>Stray- How many animals were reported as stray.</li>
+                    <li>Euthanasia- How many animals were euthanized in shelters.</li>
+                </ul>     This data was used to analyze the correlation between adoptions, stray populations, and euthanasia counts. My success metric was measured by if adoptions went up, stray population went down and euthanasia counts went down.</p>
                 
            </div>
            <div class="about-img">
@@ -58,7 +65,7 @@
          <div class="Process"> 
             <div class="pro-text">
                  <h2> Process and Techniques</h2>
-                 <p>I started my research by looking up "Shelter Animal Data".  The first link was shelteranimalscount.org which was exactly what I needed. The data can be filtered and organized by year, state, community, organization name, organization type, and species. I chose to look at year, NY state and both cats and dogs. The data was not avaible as a CSV download so I compiled the data I needed into a Google Spreadsheet mnaually. After this I found the yearly average of each category and created another CSV which was used in my data analysis. I used Python 3 to make graphs using matplotlib that visualized my data. Within my code I generated a Data Frame from the imported csv and read through the data I needed. All graph creation are functions I wrote, each has the Data Frame as the main arguement. The user is prompted to enter which graph they want visualized, upon entering a valid option the graph is genereated. For the Pie and Bar graph the user can specify data type and year accordingly.
+                 <p>I started my research by looking up "Shelter Animal Data".  The first link was shelteranimalscount.org which was exactly what I needed. The data can be filtered and organized by year, state, community, organization name, organization type, and species. I chose to look at year, NY state and both cats and dogs. The data was not avaible as a CSV download so I compiled the data I needed into a Google Spreadsheet manually. After this I found the yearly average of each category and created another CSV which was used in my data analysis. I used Python 3 to make graphs using matplotlib that visualized my data. Within my code I generated a Data Frame from the imported csv using pandas and read through the data I needed. All graph creation are functions I wrote, each has the Data Frame as the main arguement. The user is prompted to enter which graph they want visualized, upon entering a valid option the graph is genereated. For the Pie and Bar graph the user can specify data type and year accordingly. Seaborn was used to make the generated graphs neater and easier to read.
                 <div class="dropdown">
                     <button class="dropbtn">CSV Files</button>
                     <div class="dropdown-content">
@@ -72,7 +79,7 @@
          <div id="Data"> 
             <div class="data-text">
                  <h2> Data </h2>
-                 <p> The visualizations I made were all contained within 2016-2020. The deal with the averages of each category I chose to study and analyze. There is a significant outlier in my data though which makes my success metric hard to quantify. The outlier being the Coronavirus Pandemic, as you will see in most of my visualizations the pandemic severly impacted the numbers gathered for 2020. Although with that outlier the data does skew in a positive direction for my focus.
+                 <p> The visualizations I made were all contained within 2016-2020. They deal with the averages of each category I chose to study and analyze. There is a significant outlier in my data though which makes my success metric hard to quantify. The outlier being the Coronavirus Pandemic, as you will see in most of my visualizations the pandemic severly impacted the numbers gathered for 2020. This was due to saty at home orders and less people wanting to be in outdoor spaces early in the pandemic. With no one to track and TNR strays the numbers do not reflect the 2020 data accurately. Although, with that outlier the data does skew in a positive direction for my focus.
                  </p>
             </div> 
             <div class="graph-container">
@@ -82,7 +89,7 @@
                 </div>
                 <div class="graph-data">
                     <p class="graph-text">The area graph was used to see the correlation between adoptions, strays, and euthanasia. We can see that euthanasia is trending downwards before the outlier. Adoptions are increasing, while stray population stays reletively the same. Since stray population is not increasing significantly we can assume that TNR is effective and those animals released are not reproducing. </p>
-                    <img src="./areagraph.png" alt="Area Graph" class="graph-img">
+                    <img src="./areagraph2.png" alt="Area Graph" class="graph-img">
                 </div>
              </div>
             <div class="graph-data">
@@ -93,7 +100,7 @@
             </div>
             <div class="graph-data">  
                 <p class="graph-text">
-                    The bar graph shows the yearly distribution for cats and dogs, along with the total average of that year. The user can pick and choose whioch data set to view. Here we can see adoptions increasing for both dogs and cats until the outlier. This is good for my success metric as adoptions are increasing year to year. For NY it is not too surprising seeing more cats than dogs, since they are easier to house in small apartments and most shelters encourage adopting two cats especially if they are young.
+                    The bar graph shows the yearly distribution for cats and dogs, along with the total average of that year. The user can pick and choose which data set to view. Here we can see adoptions increasing for both dogs and cats until the outlier. This is good for my success metric as adoptions are increasing year to year. For NY it is not too surprising seeing more cats than dogs, since they are easier to house in small apartments and most shelters encourage adopting two cats especially if they are young.
                 </p>
                 <img src="./bargraph.png" alt="Area Graph" class="graph-img">
             </div>
